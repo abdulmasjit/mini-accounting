@@ -12,6 +12,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".Simpanan"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true" />
+        <activity android:name=".Activity.AccountActivity" />
+        <activity android:name=".Activity.CreateAccount" />
+        <activity android:name=".Activity.UpdateAccount" />
+        <activity android:name=".Activity.PemasukanActivity" />
+        <activity android:name=".Activity.PengeluaranActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

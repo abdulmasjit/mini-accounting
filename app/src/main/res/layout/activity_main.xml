@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:gravity="center"
+    tools:context=".HomeActivity">
 
     <TextView
         android:id="@+id/title_app"
@@ -15,15 +16,47 @@
         android:textSize="35sp"
         android:layout_marginBottom="20dp"/>
     <Button
-        android:id="@+id/btnCreate"
+        android:id="@+id/btnAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/title_app"
-        android:text="Create Account"
+        android:text="Account"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textSize="20sp"
         android:padding="10dp"
         android:layout_marginBottom="10dp"/>
+    <Button
+        android:id="@+id/btnPemasukan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAccount"
+        android:text="Pemasukan"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:id="@+id/btnPengeluaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPemasukan"
+        android:text="Pengeluaran"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPengeluaran"
+        android:text="Logout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:padding="10dp"/>
 
 </RelativeLayout>

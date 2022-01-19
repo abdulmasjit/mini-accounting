@@ -5,24 +5,25 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class ProfileActivity extends AppCompatActivity implements View.OnClickListener{
 
-    Button cirLoginButton;
+    ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        cirLoginButton = findViewById(R.id.cirLoginButton);
-        cirLoginButton.setOnClickListener(this);
+        setContentView(R.layout.activity_profile);
+
+        imageView = findViewById(R.id.imageView);
+        imageView.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.cirLoginButton:
-                Intent intent = new Intent(this, HomeActivity.class);
+            case R.id.imageView:
+                Intent intent = new Intent(this, Simpanan.class);
                 startActivity(intent);
                 break;
         }

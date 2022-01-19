@@ -4,13 +4,12 @@ public class Account {
     private int id;
     private String nama;
     private String keterangan;
-    private boolean akunKasBank;
 
-    public Account(int id, String nama, String keterangan, boolean akunKasBank){
+    public Account(){}
+    public Account(int id, String nama, String keterangan){
         this.id = id;
         this.nama = nama;
         this.keterangan = keterangan;
-        this.akunKasBank = akunKasBank;
     }
 
     public int getId() {
@@ -27,14 +26,6 @@ public class Account {
 
     public void setNama(String nama) {
         this.nama = nama;
-    }
-
-    public boolean getAkunKasBank() {
-        return akunKasBank;
-    }
-
-    public void setAkunKasBank(boolean akunKasBank) {
-        this.akunKasBank = akunKasBank;
     }
 
     public String getKeterangan() {

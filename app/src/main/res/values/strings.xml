@@ -7,4 +7,10 @@
     <string name="login_password_hint">Password</string>
     <string name="signup_login_hint">Already have an account? Sign In</string>
     <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+
+    <!-- Account -->
+    <string name="create_account">Tambah Account</string>
+    <string name="nama_account">Nama Account</string>
+    <string name="keterangan">Keterangan</string>
+    <string name="save">Simpan</string>
 </resources>

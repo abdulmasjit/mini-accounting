@@ -46,7 +46,6 @@
                 <TextView
                     style="@style/headerText"
                     android:layout_gravity="center"
-                    android:text="Financial OK"
                     android:layout_marginTop="40dp"/>
                 <include
                     layout="@layout/layout_login"/>

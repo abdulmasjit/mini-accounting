@@ -19,8 +19,14 @@
             android:name=".ProfileActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".HomeActivity"
             android:exported="true" />
+        <activity android:name=".Activity.AccountActivity" android:exported="true" />
+        <activity android:name=".Activity.CreateAccount" android:exported="true" />
+        <activity android:name=".Activity.UpdateAccount" android:exported="true" />
+        <activity android:name=".Activity.CatatanKeuanganActivity" android:exported="true" />
+        <activity android:name=".Activity.CreateCatatanKeuangan" android:exported="true" />
+        <activity android:name=".Activity.UpdateCatatanKeuangan" android:exported="true" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

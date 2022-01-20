@@ -3,10 +3,10 @@
     <string name="register">REGISTER</string>
     <string name="login_nama_hint">Nama</string>
     <string name="login_notelp_hint">No Telepon</string>
-    <string name="login_email_hint">Email</string>
+    <string name="login_email_hint">Email / Username</string>
     <string name="login_password_hint">Password</string>
     <string name="signup_login_hint">Already have an account? Sign In</string>
-    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+    <string name="login_signup_hint">Belum Punya Akun? Daftar</string>
     <!-- Account -->
     <string name="create_account">Tambah Account</string>
     <string name="nama_account">Nama Account</string>
@@ -14,4 +14,9 @@
     <string name="save">Simpan</string>
     <string name="image_view_4">image view 4</string>
     <string name="edit_account">Ubah Account</string>
+    <!--  List  -->
+    <string-array name="jenis_pencatatan">
+        <item>PEMASUKAN</item>
+        <item>PENGELUARAN</item>
+    </string-array>
 </resources>

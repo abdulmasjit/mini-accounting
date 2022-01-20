@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 public class AccountController {
     AccountService acc_service;
+    ArrayList<String> mylist;
 
     public AccountController() {
         acc_service = new AccountService();
@@ -23,6 +24,15 @@ public class AccountController {
         for (int i = 0; i < id.length; i++) {
             acc_service.insert(new Account(id[i], nama[i], keterangan[i]));
         }
+    }
+
+    public ArrayList<String> getListNameAccount(){
+        mylist = new ArrayList<String>();
+        for (int i = 0; i < getListAccount().size(); i++) {
+            mylist.add(getListAccount().get(i).getNama());
+        }
+
+        return mylist;
     }
 
     public void insert(int id, String nama, String keterangan){

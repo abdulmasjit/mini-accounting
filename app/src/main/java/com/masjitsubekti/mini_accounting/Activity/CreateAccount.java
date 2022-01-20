@@ -1,6 +1,7 @@
 package com.masjitsubekti.mini_accounting.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,6 +27,16 @@ public class CreateAccount extends AppCompatActivity implements View.OnClickList
 
         btnCreate = findViewById(R.id.btnCreate);
         btnCreate.setOnClickListener(this);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // back button pressed
+                Intent intent = new Intent(CreateAccount.this, AccountActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void onClick(View v) {

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.UpdateCatatanKeuangan">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="?attr/homeAsUpIndicator" />
+
+    <TextView
+        android:id="@+id/title_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Ubah Catatan"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+    <EditText
+        android:id="@+id/edtKeterangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_app"
+        android:hint="@string/keterangan"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:inputType="text"
+        android:importantForAutofill="no" />
+    <EditText
+        android:id="@+id/edtDatePicker"
+        android:layout_width="match_parent"
+        android:text=""
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtKeterangan"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:hint="dd/MM/yyyy"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:id="@+id/spinnerAccount"
+        android:layout_below="@id/edtDatePicker"
+        android:hint="Account"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+
+        style="?attr/spinnerDropDownItemStyle"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="?attr/dropdownListPreferredItemHeight"
+        android:background="@drawable/abc_spinner_mtrl_am_alpha"
+        android:backgroundTint="@color/colorPrimary"
+        >
+    </Spinner>
+    <Spinner
+        android:layout_width="match_parent"
+        android:id="@+id/spinnerJenis"
+        android:entries="@array/jenis_pencatatan"
+        android:layout_below="@id/spinnerAccount"
+        android:hint="Jenis"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+
+        style="?attr/spinnerDropDownItemStyle"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="?attr/dropdownListPreferredItemHeight"
+        android:background="@drawable/abc_spinner_mtrl_am_alpha"
+        android:backgroundTint="@color/colorPrimary"
+        >
+    </Spinner>
+    <EditText
+        android:id="@+id/edtJumlah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerJenis"
+        android:hint="Jumlah"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:inputType="number"
+        android:importantForAutofill="no" />
+    <Button
+        android:id="@+id/btnUpdateKeu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtJumlah"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/save"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+</RelativeLayout>

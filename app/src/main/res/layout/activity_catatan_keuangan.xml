@@ -24,11 +24,11 @@
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp"
             android:gravity="center_horizontal"
-            android:text="Account Keuangan"
+            android:text="Catatan Keuangan"
             android:textSize="25dp" />
 
         <ListView
-            android:id="@+id/listAccount"
+            android:id="@+id/listCatatanKeuangan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/header_form" />

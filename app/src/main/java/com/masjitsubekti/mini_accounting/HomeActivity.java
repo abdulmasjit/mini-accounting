@@ -9,13 +9,11 @@ import android.view.View;
 import android.widget.Button;
 
 import com.masjitsubekti.mini_accounting.Activity.AccountActivity;
-import com.masjitsubekti.mini_accounting.Activity.PemasukanActivity;
-import com.masjitsubekti.mini_accounting.Activity.PengeluaranActivity;
-import com.masjitsubekti.mini_accounting.R;
+import com.masjitsubekti.mini_accounting.Activity.CatatanKeuanganActivity;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button btnAccount, btnPemasukan, btnPengeluaran, btnLogout;
+    private Button btnAccount, btnCatatanKeuangan, btnLogout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,11 +27,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         btnAccount = findViewById(R.id.btnAccount);
         btnAccount.setOnClickListener(this);
 
-        btnPemasukan = findViewById(R.id.btnPemasukan);
-        btnPemasukan.setOnClickListener(this);
-
-        btnPengeluaran = findViewById(R.id.btnPengeluaran);
-        btnPengeluaran.setOnClickListener(this);
+        btnCatatanKeuangan = findViewById(R.id.btnCatatanKeuangan);
+        btnCatatanKeuangan.setOnClickListener(this);
 
         btnLogout = findViewById(R.id.btnLogout);
         btnLogout.setOnClickListener(this);
@@ -43,24 +38,19 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnAccount :
-                // start create activity
+                // start account activity
                 Intent i1 = new Intent(this, AccountActivity.class);
                 startActivity(i1);
                 break;
-            case R.id.btnPemasukan :
-                // start read activity
-                Intent i2 = new Intent(this, PemasukanActivity.class);
+            case R.id.btnCatatanKeuangan :
+                // start catatan keuangan activity
+                Intent i2 = new Intent(this, CatatanKeuanganActivity.class);
                 startActivity(i2);
                 break;
-            case R.id.btnPengeluaran :
-                // start update
-                Intent i3 = new Intent(this, PengeluaranActivity.class);
-                startActivity(i3);
-                break;
             case R.id.btnLogout :
-                // start delete activity
-                Intent i4 = new Intent(this, MainActivity.class);
-                startActivity(i4);
+                // start logout activity
+                Intent i3 = new Intent(this, MainActivity.class);
+                startActivity(i3);
                 break;
         }
     }
